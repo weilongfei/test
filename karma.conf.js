@@ -11,7 +11,7 @@ module.exports = function (config) {
     // 2. add it to the `browsers` array below.
     browsers: ['PhantomJS'],
     frameworks: ['jasmine'],
-    reporters: ['progress'],
+    reporters: ['progress', 'coverage'],
     files: ['./spec/*.spec.js'],
     preprocessors: {
       './spec/*.spec.js': ['webpack', 'sourcemap']
